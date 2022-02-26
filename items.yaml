@@ -18,7 +18,7 @@ items:
       filter: true
   items:
   - kind: organizationFolder
-    name: controller-casc-update
+    name: controller-provision
     orphanedItemStrategy:
       defaultOrphanedItemStrategy:
         pruneDeadBranches: true
@@ -39,10 +39,10 @@ items:
     - customMultiBranchProjectFactory:
         factory:
           customBranchProjectFactory:
-            marker: bundle.yaml
+            marker: controller.yaml
             definition:
               cpsScmFlowDefinition:
-                scriptPath: controller-casc-update
+                scriptPath: controller-provision
                 scm:
                   gitSCM:
                     userRemoteConfigs:
